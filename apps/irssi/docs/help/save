@@ -1,0 +1,7 @@
+
+SAVE %|[<file>]
+
+Saves the current configuration.
+
+See also: RELOAD, LAYOUT
+

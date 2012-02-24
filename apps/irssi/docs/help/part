@@ -1,0 +1,7 @@
+
+PART %|[<channel>]
+
+Parts from the current or specified channel. Depending on your settings it closes the corresponding window also.
+
+See also: JOIN
+

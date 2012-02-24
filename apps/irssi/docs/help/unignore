@@ -1,0 +1,7 @@
+
+UNIGNORE %|<id>|<mask>
+
+Unignores the specified userhost mask.
+
+See also: IGNORE
+

@@ -1,0 +1,9 @@
+PROG_LIBS=" -Wl,--export-dynamic -pthread -lgmodule-2.0 -lrt -lglib-2.0  "
+COMMON_LIBS="../fe-common/silc/libfe_common_silc.a ../fe-common/core/libfe_common_core.a  ../silc/libsilc.a ../silc/core/libsilc_core.a ../core/libcore.a ../lib-config/libirssi_config.a ../lib-popt/libpopt.a"
+
+PERL_LINK_LIBS=""
+PERL_FE_LINK_LIBS=""
+PERL_LINK_FLAGS=""
+
+CHAT_MODULES="silc"
+irc_MODULES="@irc_MODULES@"

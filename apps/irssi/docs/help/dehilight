@@ -1,0 +1,7 @@
+
+DEHILIGHT %|<id>|<mask>
+
+Remove given highlight. If parameter is a number, deletes the specified hilight entry from the list.
+
+See also: HILIGHT, SET HILIGHT
+

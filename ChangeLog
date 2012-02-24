@@ -1,0 +1,44 @@
+commit 35b767c59f0741fc58f0c4d07ccd8d2ce4134a35
+Author: Pekka Riikonen <priikone@silcnet.org>
+Date:   Fri Jul 31 22:38:06 2009 +0300
+
+    configure: check threads support in OpenBSD.
+
+commit 1598b3a51b51a434037461ccd35487bc0df3137c
+Author: Pekka Riikonen <priikone@silcnet.org>
+Date:   Fri Jul 31 22:32:57 2009 +0300
+
+    Fixed string format vulnerability in client entry handling.
+    
+    Reported and patch provided by William Cummings.
+
+commit 7a10e386467421bfac0ba425289250e61e566ce0
+Author: Pekka Riikonen <priikone@silcnet.org>
+Date:   Mon May 25 20:44:07 2009 +0300
+
+    configure.ad: Fixed configure to support new autoconf
+
+commit 226f97eb5ab714b58bfb2cba0cb50d025884bb13
+Author: Pekka Riikonen <priikone@silcnet.org>
+Date:   Fri Feb 27 16:22:36 2009 +0200
+
+    PacketEngine: Don't free underlaying stream in packet stream create error
+    
+    If packet stream creation failed it freed the stream given as argument.
+    This is wrong.  It is the caller's responsibility to free it if the
+    packet stream creation failed.
+
+commit dc0e9d3b61c1adab40d23e48486f857f14bdcbd8
+Author: Pekka Riikonen <priikone@silcnet.org>
+Date:   Thu Feb 26 08:06:02 2009 +0200
+
+    SKE: When failure is received mark SKE always failed
+    
+    Mark the SKE failed even if we don't receive error from remote.  Fixes
+    crash where the callback is called back to application without valid
+    key material and without error status.
+
+ configure.ad                  |   15 +++++++-----
+ lib/silcclient/client_entry.c |   10 ++++----
+ lib/silccore/silcpacket.c     |    8 ++++++-
+ lib/silcske/silcske.c         |    4 +-
