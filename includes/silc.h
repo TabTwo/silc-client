@@ -64,7 +64,7 @@ extern "C" {
 /* Compilation time defines, for third-party software */
 #define __SILC_HAVE_PTHREAD 1
 
-
+#define __SILC_ENABLE_DEBUG 1
 
 #if defined(HAVE_SILCDEFS_H)
 /* Automatically generated configuration header */
